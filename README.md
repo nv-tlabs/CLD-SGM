@@ -1,4 +1,4 @@
-## <p align="center">Score-Based Generative Modeling <br> with Critically-Damped Langevin Diffusion</p>
+## <p align="center">Score-Based Generative Modeling <br> with Critically-Damped Langevin Diffusion <br><br> ICLR 2022 (spotlight)</p>
 
 <div align="center">
   <a href="https://timudk.github.io/" target="_blank">Tim&nbsp;Dockhorn</a> &emsp; <b>&middot;</b> &emsp;
