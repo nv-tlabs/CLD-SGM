@@ -5,7 +5,8 @@
   <a href="http://latentspace.cc/" target="_blank">Arash&nbsp;Vahdat</a> &emsp; <b>&middot;</b> &emsp;
   <a href="https://karstenkreis.github.io/" target="_blank">Karsten&nbsp;Kreis</a>
   <br> <br>
-  <a href="https://nv-tlabs.github.io/CLD-SGM/" target="_blank">Project&nbsp;Page</a>
+  <a href="https://arxiv.org/abs/2112.07068" target="_blank">Paper</a> &emsp;
+  <a href="https://nv-tlabs.github.io/CLD-SGM/" target="_blank">Project&nbsp;Page</a> 
 </div>
 <br><br>
 <p align="center">:construction: :pick: :hammer_and_wrench: :construction_worker:</p>
