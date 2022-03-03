@@ -11,9 +11,6 @@
   <a href="https://nv-tlabs.github.io/CLD-SGM/" target="_blank">Project&nbsp;Page</a> 
 </div>
 <br><br>
-<p align="center">:construction: :pick: :hammer_and_wrench: :construction_worker:</p>
-<p align="center">Here, we will release code and checkpoints in the near future! Stay tuned!</p>
-<br><br>
 <p align="center">
     <img width="750" alt="Animation" src="assets/animation.gif"/>
 </p>
