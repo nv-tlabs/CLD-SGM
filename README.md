@@ -125,7 +125,7 @@ Load our pretrained checkpoints and play with sampling and likelihood computatio
 If you find the code useful for your research, please consider citing our ICLR paper:
 
 ```bib
-@inproceedings{dockhorn2021score,
+@inproceedings{dockhorn2022score,
   title={Score-Based Generative Modeling with Critically-Damped Langevin Diffusion},
   author={Tim Dockhorn and Arash Vahdat and Karsten Kreis},
   booktitle={International Conference on Learning Representations (ICLR)},
