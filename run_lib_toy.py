@@ -249,7 +249,7 @@ def evaluate(config, workdir):
     optimizer = get_optimizer(config, optim_params)
     state = dict(optimizer=optimizer, model=score_model, ema=ema, step=0)
 
-    optimize_fn = optimization_manager(global_rank, config)
+    optimize_fn = optimization_manager(config)
     eval_step_fn = losses.get_step_fn(False, optimize_fn, sde, config)
 
     sampling_shape = (config.sampling_batch_size,
