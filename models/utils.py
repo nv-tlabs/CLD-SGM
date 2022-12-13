@@ -72,3 +72,27 @@ def get_score_fn(config, sde, model, train=False):
         else:
             return noise_multiplier * score
     return score_fn
+
+def get_x0_prediction(config, sde, model, train=False):
+    def x0_prediction(u, t):
+        score_fn = get_score_fn(config, sde, model, train)
+        noise_multiplier = sde.noise_multiplier(t).type(torch.float32)
+        eps_prediction = score_fn(u, t) / noise_multiplier
+
+        beta_int = sde.beta_int_fn(t)
+        if sde.is_augmented:
+            coeff = torch.exp(-2. * beta_int * sde.g)
+            g = - beta_int * coeff
+            f = (2. * sde.g * beta_int + 1.) * coeff
+            var = sde.var(t)
+            cholesky11 = (torch.sqrt(var[0]))
+            cholesky21 = (var[1] / cholesky11)
+            cholesky22 = (torch.sqrt(var[2] - cholesky21 ** 2.))
+
+            x, v = torch.chunk(u, 2, dim=1)
+            x0 = (v - cholesky22 * eps_prediction - cholesky21 * x / cholesky11) / (g - f * cholesky21 / cholesky11)
+            return x0
+        else:
+            coeff = torch.exp(-0.5 * beta_int)
+            return (u - (1. - coeff ** 2.)  * eps_prediction) / coeff
+    return x0_prediction
