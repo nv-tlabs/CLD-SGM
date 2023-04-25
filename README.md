@@ -40,7 +40,7 @@ For multi-node training, the following environment variables need to be specifie
 
 ## Checkpoints
 
-We provide pre-trained CLD-SGM checkpoints for CIFAR-10 and CelebA-HQ-256 [here](https://drive.google.com/drive/folders/1tgYRqCWAq1YDKe7zh5nkffpFA55yjqBr?usp=sharing).
+We provide pre-trained CLD-SGM checkpoints for CIFAR-10 and CelebA-HQ-256 [here](https://drive.google.com/drive/folders/1kettzSTqJnLCFqEvpFBxR3FbF1H2JtRm).
 
 ## Training and evaluation
 
@@ -73,7 +73,7 @@ mpirun --allow-run-as-root -np 2 -npernode 1 bash -c 'python main.py -cc configs
 
 Before running this you need to download the FID stats file from [here](https://drive.google.com/file/d/14UB27-Spi8VjZYKST3ZcT8YVhAluiFWI/view?usp=sharing) and place it into `$ROOT/assets/stats/`).
 
-To evaluate our provided CIFAR-10 model download the checkpoint [here](https://drive.google.com/drive/folders/1KcELOxCOATj3zr_aVfdFIFzXw8Bzev4h?usp=sharing), create a directory `work_dir/cifar10_pretrained_seed_0/checkpoints`, place the checkpoint in it, and set `--ckpt_file checkpoint_800000.pth` as well as `--workdir cifar10_pretrained`.
+To evaluate our provided CIFAR-10 model download the checkpoint [here](https://drive.google.com/drive/folders/1O6ry0U1CgME94KAyIqCzgmLPS4jJGPFa), create a directory `work_dir/cifar10_pretrained_seed_0/checkpoints`, place the checkpoint in it, and set `--ckpt_file checkpoint_800000.pth` as well as `--workdir cifar10_pretrained`.
 
 </details>
 
@@ -118,8 +118,8 @@ Load our pretrained checkpoints and play with sampling and likelihood computatio
 
 | Link | Description|
 |:----:|:-----|
-|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nixYLeGQZd5-sY-s_pSvTCtPcEUlaj05?usp=sharing)  | CIFAR-10 |
-|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1d84GfWd_6Fu52Ujtg8shGYUgbCfBDies?usp=sharing) | CelebA-HQ-256 |
+|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TjWiAfTOsIORQc0KpBq-gZ7aH5FrHGnm)  | CIFAR-10 |
+|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1O14jQkQJI9rOSh_Dtz_nXwwNaHAU_CQd) | CelebA-HQ-256 |
 
 ## Citation
 If you find the code useful for your research, please consider citing our ICLR paper:
